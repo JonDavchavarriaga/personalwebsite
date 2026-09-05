@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jonatan Chavarriaga | Ingeniero informático</title>
+  <meta
+    name="description"
+    content="Portafolio profesional de Jonatan Chavarriaga, ingeniero de software en Colombia especializado en backend, cloud y DevOps."
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">JC</a>
+
+      <div class="header-actions">
+        <button
+          class="language-toggle"
+          id="languageToggle"
+          type="button"
+          aria-label="Cambiar idioma a inglés"
+        >
+          EN
+        </button>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Cambiar modo claro/oscuro"
+          type="button"
+        >
+          ☼
+        </button>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          type="button"
+        >
+          ☰
+        </button>
+      </div>
+
+      <div class="header-right" id="mobileMenu">
+        <nav class="nav">
+          <a href="#skills" data-i18n="navSkills">Habilidades</a>
+          <a href="#cv" data-i18n="navCv">CV</a>
+          <a href="#projects" data-i18n="navProjects">Proyectos</a>
+          <a href="#contact" data-i18n="navContact">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero section">
+      <div class="container hero-grid">
+        <aside class="hero-social" aria-label="Redes sociales">
+          <a
+            href="https://www.linkedin.com/in/jonatanchavarria/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.5 8h4V23h-4V8zm7 0h3.8v2h.1c.53-1 1.83-2.1 3.77-2.1 4.03 0 4.77 2.65 4.77 6.1V23h-4v-7.1c0-1.7-.03-3.9-2.38-3.9-2.38 0-2.75 1.86-2.75 3.78V23h-4V8z" />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/JonDavchavarriaga"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.93c.58.1.79-.25.79-.56v-2.16c-3.2.7-3.88-1.54-3.88-1.54-.52-1.32-1.27-1.67-1.27-1.67-1.04-.7.08-.69.08-.69 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.25 3.32.95.1-.74.4-1.25.72-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.3 1.18-3.1-.12-.3-.51-1.5.11-3.13 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.63.24 2.83.12 3.13.73.8 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.26 5.69.42.36.78 1.08.78 2.17v3.22c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z" />
+            </svg>
+          </a>
+        </aside>
+
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="eyebrow">Este soy yo</p>
+          <h1>Jonatan Chavarriaga</h1>
+          <h2 data-i18n="role">Ingeniero informático</h2>
+          <p data-i18n="heroDescription">
+            Ingeniero de Colombia con experiencia construyendo APIs robustas,
+            automatizando despliegues y diseñando soluciones cloud escalables
+            para productos y empresas.
+          </p>
+          <a class="talk-btn" href="#contact" data-i18n="talk">Hablemos</a>
+        </div>
+
+        <div class="hero-image-wrap">
+          <img
+            src="assets/avatar-ia2.png"
+            alt="Avatar IA de Jonatan Chavarriaga"
+            class="hero-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h3 data-i18n="skillsTitle">Mis habilidades principales</h3>
+        <p class="section-subtitle" data-i18n="skillsSubtitle">Lo que hago</p>
+        <div class="skills-grid">
+          <article class="card" data-i18n="skillBackend">Backend: Java / Spring Boot / Node.js</article>
+          <article class="card" data-i18n="skillCloud">Cloud: AWS / LocalStack</article>
+          <article class="card" data-i18n="skillDevops">DevOps: Docker / CI/CD / GitHub Actions</article>
+          <article class="card" data-i18n="skillDatabases">Bases de datos: PostgreSQL / MySQL</article>
+          <article class="card" data-i18n="skillArchitecture">Arquitectura: Microservicios / REST APIs</article>
+          <article class="card" data-i18n="skillObservability">Observabilidad: Logs / Métricas / Troubleshooting</article>
+        </div>
+      </div>
+    </section>
+
+    <section id="cv" class="section">
+      <div class="container cv-grid">
+        <div class="cv-photo-wrap">
+          <img src="assets/foto-real.png" alt="Jonatan Chavarriaga" class="cv-photo" />
+        </div>
+        <div>
+          <h3 data-i18n="cvTitle">CV y trayectoria</h3>
+          <p data-i18n="cvDescription">
+            Experiencia en desarrollo backend, integración cloud y automatización
+            de pipelines para soluciones empresariales.
+          </p>
+          <a
+            class="btn btn-primary"
+            href="assets/Cv-Jonatan-Chavarriaga.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span data-i18n="downloadCv">Descargar CV</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h3 data-i18n="projectsTitle">Proyectos destacados</h3>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h4 data-i18n="project1Title">Proyecto 1</h4>
+            <p data-i18n="projectDescription">Problema, arquitectura y resultado de negocio en una descripción breve.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer" data-i18n="demo">Demo</a>
+              <a href="#" target="_blank" rel="noopener noreferrer" data-i18n="github">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <h4 data-i18n="project2Title">Proyecto 2</h4>
+            <p data-i18n="projectDescription">Problema, arquitectura y resultado de negocio en una descripción breve.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer" data-i18n="demo">Demo</a>
+              <a href="#" target="_blank" rel="noopener noreferrer" data-i18n="github">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <h4 data-i18n="project3Title">Proyecto 3</h4>
+            <p data-i18n="projectDescription">Problema, arquitectura y resultado de negocio en una descripción breve.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer" data-i18n="demo">Demo</a>
+              <a href="#" target="_blank" rel="noopener noreferrer" data-i18n="github">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer section">
+    <div class="container">
+      <h3 data-i18n="contactTitle">Contacto</h3>
+      <p data-i18n="contactDescription">¿Hablamos de tu proyecto? Escríbeme y agendamos una reunión.</p>
+      <p>
+        <a href="mailto:jonatanchavarriagal@gmail.com">jonatanchavarriagal@gmail.com</a> ·
+        <a href="https://www.linkedin.com/in/jonatanchavarria/" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+        <a href="https://github.com/JonDavchavarriaga" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const root = document.documentElement;
+    const themeToggle = document.getElementById("themeToggle");
+    const languageToggle = document.getElementById("languageToggle");
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const navLinks = document.querySelectorAll(".nav a");
+
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "light") root.classList.add("light");
+
+    const translations = {
+      es: {
+        navSkills: "Habilidades",
+        navCv: "CV",
+        navProjects: "Proyectos",
+        navContact: "Contacto",
+        eyebrow: "Este soy yo",
+        role: "Ingeniero informático",
+        heroDescription: "Ingeniero de Colombia con experiencia construyendo APIs robustas, automatizando despliegues y diseñando soluciones cloud escalables para productos y empresas.",
+        talk: "Hablemos",
+        skillsTitle: "Mis habilidades principales",
+        skillsSubtitle: "Lo que hago",
+        skillBackend: "Backend: Java / Spring Boot / Node.js",
+        skillCloud: "Cloud: AWS / LocalStack",
+        skillDevops: "DevOps: Docker / CI/CD / GitHub Actions",
+        skillDatabases: "Bases de datos: PostgreSQL / MySQL",
+        skillArchitecture: "Arquitectura: Microservicios / REST APIs",
+        skillObservability: "Observabilidad: Logs / Métricas / Troubleshooting",
+        cvTitle: "CV y trayectoria",
+        cvDescription: "Experiencia en desarrollo backend, integración cloud y automatización de pipelines para soluciones empresariales.",
+        downloadCv: "Descargar CV",
+        projectsTitle: "Proyectos destacados",
+        project1Title: "Proyecto 1",
+        project2Title: "Proyecto 2",
+        project3Title: "Proyecto 3",
+        projectDescription: "Problema, arquitectura y resultado de negocio en una descripción breve.",
+        demo: "Demo",
+        github: "GitHub",
+        contactTitle: "Contacto",
+        contactDescription: "¿Hablamos de tu proyecto? Escríbeme y agendamos una reunión."
+      },
+      en: {
+        navSkills: "Skills",
+        navCv: "Resume",
+        navProjects: "Projects",
+        navContact: "Contact",
+        eyebrow: "It's me",
+        role: "Software Engineer",
+        heroDescription: "Colombian engineer with experience building robust APIs, automating deployments, and designing scalable cloud solutions for products and businesses.",
+        talk: "Let's talk",
+        skillsTitle: "My Top Skills",
+        skillsSubtitle: "What I Do",
+        skillBackend: "Backend: Java / Spring Boot / Node.js",
+        skillCloud: "Cloud: AWS / LocalStack",
+        skillDevops: "DevOps: Docker / CI/CD / GitHub Actions",
+        skillDatabases: "Databases: PostgreSQL / MySQL",
+        skillArchitecture: "Architecture: Microservices / REST APIs",
+        skillObservability: "Observability: Logs / Metrics / Troubleshooting",
+        cvTitle: "Resume & Experience",
+        cvDescription: "Experience in backend development, cloud integration, and pipeline automation for enterprise solutions.",
+        downloadCv: "Download Resume",
+        projectsTitle: "Featured Projects",
+        project1Title: "Project 1",
+        project2Title: "Project 2",
+        project3Title: "Project 3",
+        projectDescription: "Problem, architecture, and business outcome in a brief description.",
+        demo: "Demo",
+        github: "GitHub",
+        contactTitle: "Contact",
+        contactDescription: "Let's talk about your project. Send me a message and schedule a meeting."
+      }
+    };
+
+    let currentLanguage = localStorage.getItem("language") || "es";
+
+    function updateLanguage(language) {
+      currentLanguage = language;
+      document.documentElement.lang = language;
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        element.textContent = translations[language][element.dataset.i18n];
+      });
+      languageToggle.textContent = language === "es" ? "EN" : "ES";
+      languageToggle.setAttribute(
+        "aria-label",
+        language === "es" ? "Cambiar idioma a inglés" : "Switch language to Spanish"
+      );
+      localStorage.setItem("language", language);
+    }
+
+    themeToggle.addEventListener("click", () => {
+      root.classList.toggle("light");
+      localStorage.setItem("theme", root.classList.contains("light") ? "light" : "dark");
+    });
+
+    languageToggle.addEventListener("click", () => {
+      updateLanguage(currentLanguage === "es" ? "en" : "es");
+    });
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mobileMenu.classList.toggle("is-open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.textContent = isOpen ? "✕" : "☰";
+    });
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth <= 640 && mobileMenu.classList.contains("is-open")) {
+          mobileMenu.classList.remove("is-open");
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.textContent = "☰";
+        }
+      });
+    });
+
+    updateLanguage(currentLanguage);
+  </script>
+</body>
+</html>
