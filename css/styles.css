@@ -60,7 +60,7 @@ a {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 30;
+  z-index: 100;
   background: color-mix(in srgb, var(--bg) 88%, transparent);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
@@ -175,6 +175,37 @@ a {
   width: 19px;
   height: 19px;
   fill: currentColor;
+}
+
+.availability {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.availability-dot {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: #35c759;
+  box-shadow: 0 0 0 0 rgba(53, 199, 89, 0.65);
+  animation: availability-pulse 1.8s infinite;
+}
+
+@keyframes availability-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(53, 199, 89, 0.65);
+  }
+  70% {
+    box-shadow: 0 0 0 0.55rem rgba(53, 199, 89, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(53, 199, 89, 0);
+  }
 }
 
 .eyebrow {
@@ -414,7 +445,8 @@ h3 {
     padding: 1rem;
     background: var(--bg);
     border-top: 1px solid var(--border);
-    z-index: 40;
+    z-index: 110;
+    isolation: isolate;
   }
 
   .header-right.is-open {
