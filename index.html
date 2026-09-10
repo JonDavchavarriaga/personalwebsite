@@ -145,35 +145,43 @@
       </div>
     </section>
 
-    <section id="projects" class="section">
+<section id="projects" class="section">
       <div class="container">
         <h3 data-i18n="projectsTitle">Proyectos destacados</h3>
         <div class="projects-grid">
+          
+          <!-- Proyecto 1: Fleet Logistics -->
           <article class="project-card">
             <h4 data-i18n="project1Title">Fleet Logistics Platform</h4>
-            <p data-i18n="project1Description">Demo funcional de una plataforma web logística para el seguimiento y la coordinación de entregas.</p>
-            <p data-i18n="project1Stack">React, TypeScript, Vite, Java, Spring Boot, JWT, PostgreSQL, Render y Netlify.</p>
+            <p data-i18n="project1Desc">Plataforma nativa en la nube para el seguimiento y la coordinación de entregas. Arquitectura hexagonal y telemetría en tiempo real.</p>
+            <p class="project-stack" data-i18n="project1Stack">Stack: React, TypeScript, Vite, Java, Spring Boot, JWT, PostgreSQL, Render y Netlify.</p>
             <div class="project-links">
               <a href="https://fleet.jonatanchavarriaga.codes/" target="_blank" rel="noopener noreferrer" data-i18n="demo">Demo</a>
               <a href="https://github.com/JonDavchavarriaga/fleet-logistics-platform" target="_blank" rel="noopener noreferrer" data-i18n="github">GitHub</a>
             </div>
           </article>
+
+          <!-- Proyecto 2: Biometric Attendance (NEXUS) -->
           <article class="project-card">
-            <h4 data-i18n="project2Title">Proyecto 2</h4>
-            <p data-i18n="projectDescription">Problema, arquitectura y resultado de negocio en una descripción breve.</p>
+            <h4 data-i18n="project2Title">Biometric Attendance Platform</h4>
+            <p data-i18n="project2Desc">Sistema híbrido IoT con procesamiento asíncrono, WebSockets en vivo y tolerancia a fallos de red offline-first.</p>
+            <p class="project-stack" data-i18n="project2Stack">Stack: Python, FastAPI, MySQL, Celery, Redis y Docker.</p>
             <div class="project-links">
-              <a href="#" target="_blank" rel="noopener noreferrer" data-i18n="demo">Demo</a>
-              <a href="#" target="_blank" rel="noopener noreferrer" data-i18n="github">GitHub</a>
+              <a href="https://biometric.jonatanchavarriaga.codes" target="_blank" rel="noopener noreferrer" data-i18n="demo">Demo</a>
+              <a href="https://github.com/JonDavchavarriaga/Administracion-Dispositivo-FingerPrint-con-pyzk" target="_blank" rel="noopener noreferrer" data-i18n="github">GitHub</a>
             </div>
           </article>
+
+          <!-- Proyecto 3: En desarrollo (Microservicios AWS) -->
           <article class="project-card">
-            <h4 data-i18n="project3Title">Proyecto 3</h4>
-            <p data-i18n="projectDescription">Problema, arquitectura y resultado de negocio en una descripción breve.</p>
+            <h4 data-i18n="project3Title">Cloud-Native SaaS (En desarrollo)</h4>
+            <p data-i18n="project3Desc">Motor de procesamiento distribuido orquestado con Kubernetes, infraestructura como código y servicios AWS.</p>
+            <p class="project-stack" data-i18n="project3Stack">Stack: Kubernetes, Terraform, AWS, Microservicios.</p>
             <div class="project-links">
-              <a href="#" target="_blank" rel="noopener noreferrer" data-i18n="demo">Demo</a>
-              <a href="#" target="_blank" rel="noopener noreferrer" data-i18n="github">GitHub</a>
+              <span class="badge-disabled" data-i18n="comingSoon">Próximamente</span>
             </div>
           </article>
+
         </div>
       </div>
     </section>
@@ -202,7 +210,7 @@
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "light") root.classList.add("light");
 
-    const translations = {
+const translations = {
       es: {
         navSkills: "Habilidades",
         navCv: "CV",
@@ -210,29 +218,33 @@
         navContact: "Contacto",
         availability: "Disponible para trabajar",
         eyebrow: "Este soy yo",
-        role: "Ingeniero informático",
-        heroDescription: "Ingeniero de Colombia con experiencia construyendo APIs robustas, automatizando despliegues y diseñando soluciones cloud escalables para productos y empresas.",
+        role: "Desarrollador de Software",
+        heroDescription: "Ingeniero de Colombia desarrollando APIs robustas, automatizando despliegues y diseñando soluciones cloud escalables para productos y empresas.",
         talk: "Hablemos",
         skillsTitle: "Mis habilidades principales",
         skillsSubtitle: "Lo que hago",
-        skillBackend: "Backend: Java / Spring Boot / Node.js",
-        skillCloud: "Cloud: AWS / LocalStack",
-        skillDevops: "DevOps: Docker / CI/CD / GitHub Actions",
+        skillBackend: "Backend: Java / Spring Boot / Python / FastAPI",
+        skillCloud: "Cloud: AWS / Infraestructura como Código",
+        skillDevops: "DevOps: Docker / Kubernetes / GitHub Actions",
         skillDatabases: "Bases de datos: PostgreSQL / MySQL",
-        skillArchitecture: "Arquitectura: Microservicios / REST APIs",
-        skillObservability: "Observabilidad: Logs / Métricas / Troubleshooting",
+        skillArchitecture: "Arquitectura: Microservicios / Hexagonal",
+        skillObservability: "Observabilidad: Celery / Redis / WebSockets",
         cvTitle: "CV y trayectoria",
-        cvDescription: "Un recorrido por mi formación, experiencia profesional y certificaciones que reflejan mi crecimiento como ingeniero de software.",
+        cvDescription: "Un recorrido por mi formación, práctica en el sector financiero y proyectos que reflejan mi enfoque en la ingeniería de software.",
         downloadCv: "Descargar CV",
         projectsTitle: "Proyectos destacados",
         project1Title: "Fleet Logistics Platform",
-        project1Description: "Demo funcional de una plataforma web logística para el seguimiento y la coordinación de entregas. Permite a los conductores consultar entregas, actualizar estados, reportar su ubicación y abrir destinos en mapas, e incluye una vista responsive para la operación y el dispatch.",
+        project1Desc: "Plataforma nativa en la nube para el seguimiento y la coordinación de entregas. Arquitectura hexagonal y telemetría en tiempo real.",
         project1Stack: "Stack: React, TypeScript, Vite, Java, Spring Boot, JWT, PostgreSQL, Render y Netlify.",
-        project2Title: "Proyecto 2",
-        project3Title: "Proyecto 3",
-        projectDescription: "Problema, arquitectura y resultado de negocio en una descripción breve.",
+        project2Title: "Biometric Attendance Platform",
+        project2Desc: "Sistema híbrido IoT con procesamiento asíncrono, WebSockets en vivo y tolerancia a fallos de red offline-first.",
+        project2Stack: "Stack: Python, FastAPI, MySQL, Celery, Redis y Docker.",
+        project3Title: "Cloud-Native SaaS (En desarrollo)",
+        project3Desc: "Motor de procesamiento distribuido orquestado con Kubernetes, infraestructura como código y servicios AWS.",
+        project3Stack: "Stack: Kubernetes, Terraform, AWS, Microservicios.",
         demo: "Demo",
         github: "GitHub",
+        comingSoon: "Próximamente",
         contactTitle: "Contacto",
         contactDescription: "¿Hablamos de tu proyecto? Escríbeme y agendamos una reunión."
       },
@@ -243,29 +255,33 @@
         navContact: "Contact",
         availability: "Available for work",
         eyebrow: "It's me",
-        role: "Software Engineer",
-        heroDescription: "Colombian engineer with experience building robust APIs, automating deployments, and designing scalable cloud solutions for products and businesses.",
+        role: "Software Developer",
+        heroDescription: "Colombian engineer developing robust APIs, automating deployments, and designing scalable cloud solutions for products and businesses.",
         talk: "Let's talk",
         skillsTitle: "My Top Skills",
         skillsSubtitle: "What I Do",
-        skillBackend: "Backend: Java / Spring Boot / Node.js",
-        skillCloud: "Cloud: AWS / LocalStack",
-        skillDevops: "DevOps: Docker / CI/CD / GitHub Actions",
+        skillBackend: "Backend: Java / Spring Boot / Python / FastAPI",
+        skillCloud: "Cloud: AWS / Infrastructure as Code",
+        skillDevops: "DevOps: Docker / Kubernetes / GitHub Actions",
         skillDatabases: "Databases: PostgreSQL / MySQL",
-        skillArchitecture: "Architecture: Microservices / REST APIs",
-        skillObservability: "Observability: Logs / Metrics / Troubleshooting",
+        skillArchitecture: "Architecture: Microservices / Hexagonal",
+        skillObservability: "Observability: Celery / Redis / WebSockets",
         cvTitle: "Resume & Experience",
-        cvDescription: "A look at my education, professional experience, and certifications that have shaped my growth as a software engineer.",
+        cvDescription: "A look at my education, financial sector internship, and projects that showcase my focus on software engineering.",
         downloadCv: "Download Resume",
         projectsTitle: "Featured Projects",
         project1Title: "Fleet Logistics Platform",
-        project1Description: "Functional demo of a logistics web platform for delivery tracking and coordination. Drivers can view deliveries, update statuses, report their location, and open destinations in maps, with a responsive operations and dispatch view.",
+        project1Desc: "Cloud-native platform for delivery tracking and coordination. Hexagonal architecture and real-time telemetry.",
         project1Stack: "Stack: React, TypeScript, Vite, Java, Spring Boot, JWT, PostgreSQL, Render, and Netlify.",
-        project2Title: "Project 2",
-        project3Title: "Project 3",
-        projectDescription: "Problem, architecture, and business outcome in a brief description.",
+        project2Title: "Biometric Attendance Platform",
+        project2Desc: "Hybrid IoT system featuring asynchronous processing, live WebSockets, and offline-first network fault tolerance.",
+        project2Stack: "Stack: Python, FastAPI, MySQL, Celery, Redis, and Docker.",
+        project3Title: "Cloud-Native SaaS (In Development)",
+        project3Desc: "Distributed processing engine orchestrated with Kubernetes, infrastructure as code, and AWS services.",
+        project3Stack: "Stack: Kubernetes, Terraform, AWS, Microservices.",
         demo: "Demo",
         github: "GitHub",
+        comingSoon: "Coming Soon",
         contactTitle: "Contact",
         contactDescription: "Let's talk about your project. Send me a message and schedule a meeting."
       }

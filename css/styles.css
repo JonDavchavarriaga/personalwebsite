@@ -306,6 +306,13 @@ h3 {
   padding: 1rem;
 }
 
+.project-card .project-stack {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #669bbc;
+  margin-top: 8px;
+}
+
 .cv-grid {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
