@@ -13,6 +13,8 @@ if (savedTheme === "light") {
 
 const translations = {
   es: {
+    metaTitle: "Jonatan Chavarriaga | Ingeniero informático",
+    metaDescription: "Portafolio profesional de Jonatan Chavarriaga, ingeniero de software en Colombia especializado en backend, cloud y DevOps.",
     navSkills: "Habilidades",
     navCv: "CV",
     navProjects: "Proyectos",
@@ -50,6 +52,8 @@ const translations = {
     contactDescription: "¿Hablamos de tu proyecto? Escríbeme y agendamos una reunión."
   },
   en: {
+    metaTitle: "Jonatan Chavarriaga | Software Engineer",
+    metaDescription: "Professional portfolio of Jonatan Chavarriaga, software engineer based in Colombia specializing in backend, cloud, and DevOps.",
     navSkills: "Skills",
     navCv: "Resume",
     navProjects: "Projects",
@@ -93,6 +97,23 @@ let currentLanguage = localStorage.getItem("language") || "es";
 function updateLanguage(language) {
   currentLanguage = language;
   document.documentElement.lang = language;
+
+  if (translations[language].metaTitle) {
+    document.title = translations[language].metaTitle;
+  }
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc && translations[language].metaDescription) {
+    metaDesc.setAttribute("content", translations[language].metaDescription);
+  }
+  const ogDesc = document.querySelector('meta[property="og:description"]');
+  if (ogDesc && translations[language].metaDescription) {
+    ogDesc.setAttribute("content", translations[language].metaDescription);
+  }
+  const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+  if (twitterDesc && translations[language].metaDescription) {
+    twitterDesc.setAttribute("content", translations[language].metaDescription);
+  }
+
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     element.textContent = translations[language][element.dataset.i18n];
   });
